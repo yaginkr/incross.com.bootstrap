@@ -10,6 +10,14 @@ header{
 	z-index:999;
 }
 
+.hero-banner{
+    background: url(../img/hero_banner.png) no-repeat center;
+    background-size: cover;
+    height: 80vh;
+}
+
+
+
 .top-info{
 	background: linear-gradient(45deg, #0E90D5, #3032A2) !important;
 }
@@ -28,13 +36,15 @@ header{
 	padding: 0;
 }
 
+
+
 .top-logo{
 	width: 200px
 }
 
 .navbar-nav .nav-item .nav-link{
-	font-size: 20px;
-	font-weight:500;
+	font-size: 18px;
+    font-weight:400;
 }
 
 .navbar-nav .nav-item.tohome-menu{
