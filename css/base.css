@@ -16,10 +16,14 @@ header{
     height: 80vh;
 }
 
+.hero-aobut{
+    padding-top: 50px;
+}
 
 
 .top-info{
-	background: linear-gradient(45deg, #0E90D5, #3032A2) !important;
+    background: linear-gradient(45deg, #0E90D5, #3032A2) !important;
+    font-size: 14px;
 }
 
 .top-info i{
@@ -42,14 +46,52 @@ header{
 	width: 200px
 }
 
+.navbar{
+    box-shadow: 0 4px 20px rgba(44,114,255,.1);
+}
+
 .navbar-nav .nav-item .nav-link{
 	font-size: 18px;
     font-weight:400;
+    color: #000;
+    padding: 5 25px;
+    margin-left: 10px;
 }
+
+.navbar-nav .nav-item .nav-link:hover{
+    color:royalblue;
+}
+
+
 
 .navbar-nav .nav-item.tohome-menu{
 	display: none;
 }
+
+
+.dropdown-menu{
+    margin-top: 10px;
+}
+
+.dropdown-menu .dropdown-item{
+    padding: 15px;
+    width: 200px;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    color:royalblue;
+}
+
+.menu-icon-tencent img {
+    width: 100px;
+    filter: grayscale(100%);
+}
+
+.dropdown-menu .dropdown-item:hover .menu-icon-tencent img {
+    width: 100px;
+    filter: grayscale(0%);
+}
+
 
 .top-banner{
 	padding: 200px 0px;
@@ -59,11 +101,29 @@ header{
 }
 
 .section{
-	padding: 150px 0;
+	padding: 110px 0;
 }
 
 .bg-light-grey {
     background: #F9F9FB;
+}
+
+
+
+/* hero-banner */
+
+.hero-title{
+    padding: 50px 20px;   
+    color:#000;
+}
+
+.hero-title h1{
+    font-size: 50px;
+    margin: 0px;
+}
+
+.hero-title p{
+    font-size: 18px;
 }
 
 
@@ -87,7 +147,7 @@ header{
 }
 
 .about-box-wrap .about-box {
-    padding: 30px;
+    padding: 15px 30px;
     border-radius: 10px;
     margin-bottom: 30px;
     background: #fff;
@@ -107,15 +167,18 @@ header{
     color: #5268F2;
 }
 
-.about-img {
+.about-img-right {
     text-align: right;
+}
+
+.about-img-left {
+    text-align: left;
 }
 
 .img-fluid {
     max-width: 100%;
     height: auto;
 }
-
 
 
 
@@ -177,6 +240,14 @@ header{
     box-shadow: 0 5px 15px 0 rgba(194, 188, 210, 0.2);
 }
 
+.features-item .body h6{
+    font-size: 20px;
+}
+
+.features-item .body p{
+    font-size: 16px;
+}
+
 .features-item .icon {
     display: inline-block;
     margin-bottom: 30px;
@@ -222,11 +293,24 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(50% - 85px);
+    width: calc(50% - 78px);
+    height: 100%;
+}
+
+#new-features .new-features-img2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(50% - 78px);
     height: 100%;
 }
 
 #new-features .new-features-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#new-features .new-features-img2 img {
     width: 100%;
     height: 100%;
 }
@@ -335,14 +419,43 @@ header{
 }
 
 
-
 @media (max-width:991px){
 	
 	/* 手机端的时候，隐藏顶部信息，然是留下色块*/
 	.top-info>div{
 		display: none;
-	}
-	
+    }
+    
+    .section{
+        padding: 50px 0;
+    }
+    
+    .dropdown-menu{
+        width: 100%;
+    }
+
+    .about-inner > h6 {
+        color: #5268F2;
+        margin-bottom: 10px;
+    }
+
+    .about-inner h1 {
+        font-size: 25px;
+        margin-bottom: 5px;
+        line-height: 30px;
+    }
+    
+    .about-inner h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+        line-height: 25px;
+    }
+    
+    .about-inner p {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
 	.navbar-nav .nav-item.tohome-menu{
 		display: flex;
 		align-items: center;
@@ -353,7 +466,114 @@ header{
 	.navbar-nav .nav-item.tohome-menu i{
 		margin-right: 15px;
 		color: rgba(0, 0, 0, 0.5);
-	}
+    }
+    
+    #new-features .new-features-img {
+        display: none;
+    }
+
+    #new-features .new-features-img2 {
+        display: none;
+    }
+
+    .about-img-right {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .about-img-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .about-img-right img{
+        width:55%
+    }
+    
+    .about-img-left img{
+        width:55%
+    }
+
+    .top-banner{
+        padding: 50px 0px;
+        background-color: #002752;
+        color: #fff;
+    }
+    
+    .hero-banner{
+
+    }
+
+    .hero-title{
+        padding: 50px 0px;   
+        color:#000;
+    }
+    
+    .hero-title h1{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    .hero-title h2{
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    
+    .hero-title p{
+        font-size: 14px;
+        margin: 5px 0;
+        width: 70%;
+        line-height: 28px;
+    }
+
+    
+
+    .about-box-wrap{
+        margin-top: 15px;
+    }
+
+    .about-box-wrap .about-box{
+        padding: 10px;
+        width: 45%;
+        margin-bottom: 10px;
+    }
+
+    .about-box-wrap .about-box h6{
+        font-size:13px
+    }
+
+    .about-box-wrap .about-box h5{
+        font-size:22px
+    }
+
+    /*  */
+
+    .new-features-inner .new-features-list {
+        margin-bottom: 40px;
+    }
+    
+    .new-features-inner .new-features-list li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+    
+    .new-features-inner .new-features-list li h5 {
+        font-size: 30px;
+        margin-right: 30px;
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 2px #5268F2;
+    }
+    
+    .new-features-inner .new-features-list li .text h6 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
 	
 	/* 脚步信息 */
 	
