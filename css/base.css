@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+.container{
+    width:1200px
+}
+
 body{
 	font-family: 'Noto Sans KR', sans-serif;
 }
@@ -419,8 +423,20 @@ header{
 }
 
 
+@media (min-width: 1238px) {
+    .container{
+        min-width: 1440px;
+    }
+}
+
+
 @media (max-width:991px){
-	
+    
+    .hero-banner{
+        height: 100%;
+    }
+    
+
 	/* 手机端的时候，隐藏顶部信息，然是留下色块*/
 	.top-info>div{
 		display: none;
@@ -524,7 +540,6 @@ header{
         width: 70%;
         line-height: 28px;
     }
-
     
 
     .about-box-wrap{
